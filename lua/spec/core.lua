@@ -1,9 +1,10 @@
 local jest = require "spec.adapters.jest"
 local busted = require "spec.adapters.busted"
+local rspec = require "spec.adapters.rspec"
 
 local core = {
   current_adapter = jest,
-  adapters = { busted, jest },
+  adapters = { busted, rspec, jest },
   spec_namespace = vim.api.nvim_create_namespace "spec",
 }
 
